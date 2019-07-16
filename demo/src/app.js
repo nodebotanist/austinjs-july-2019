@@ -45,6 +45,7 @@ async function loadImg (imgPath) {
 }
 
 function determineManipulationArray (manipulationType) {
+	console.log('type', manipulationType)
 	let manipulationArray
 	switch (manipulationType) {
 	case 'rotate-right':
@@ -61,6 +62,10 @@ function determineManipulationArray (manipulationType) {
 		break
 	case 'remove-contrast':
 		manipulationArray = ['-contrast']
+		break
+	case 'blur':
+		console.log('blur')
+		manipulationArray = ['-blur', '0x4']
 		break
 	}
 	return manipulationArray
@@ -91,6 +96,7 @@ async function startManipulation (event) {
 		sourceBytes = window.webcamUInt8
 	}
 	if(ready) {
+		console.log('type1', event.target.value)
 		let manipulationMatrix = determineManipulationArray(event.target.value)
 		let outputImg = await manipulateImg(sourceBytes, manipulationMatrix)
 		outputMagickedImg(outputImg)
