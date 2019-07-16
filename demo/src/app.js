@@ -45,33 +45,33 @@ async function loadImg (imgPath) {
 }
 
 function determineManipulationArray (manipulationType) {
-	console.log('type', manipulationType)
-	let manipulationArray
+	let manipulationArray = ['-resize', '620x480>']
+	let effect = []
 	switch (manipulationType) {
 	case 'rotate-right':
-		manipulationArray = ['-rotate', '90']
+		effect = ['-rotate', '90']
 		break
 	case 'rotate-left':
-		manipulationArray = ['-rotate', '-90']
+		effect = ['-rotate', '-90']
 		break
 	case 'grayscale':
-		manipulationArray = ['-set', 'colorspace', 'LinearGray']
+		effect = ['-set', 'colorspace', 'LinearGray']
 		break
 	case 'add-contrast':
-		manipulationArray = [ '+contrast' ]
+		effect = [ '+contrast' ]
 		break
 	case 'remove-contrast':
-		manipulationArray = ['-contrast']
+		effect = ['-contrast']
 		break
 	case 'blur':
-		console.log('blur')
-		manipulationArray = ['-blur', '0x4']
+		effect = ['-blur', '0x4']
 		break
 	}
-	return manipulationArray
+	return manipulationArray.concat(effect)
 }
 
 async function manipulateImg (sourceBytes, manipulationArray) {
+	console.log(manipulationArray)
 	let processedFiles = await Magick.Call([{
 		'name': 'srcFile.png',
 		'content': sourceBytes
