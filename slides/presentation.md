@@ -23,7 +23,7 @@
 
 ---
 
-## What WebAssembly is *NOT*
+# What WebAssembly is **NOT**
 
 * a programming language
 * the death of JS
@@ -33,7 +33,7 @@
 
 ---
 
-## What WebAssembly *is*
+# What WebAssembly **IS**
 
 * A compilation target for other languages to compile to
 * An augmentation of the abilities of JS
@@ -41,7 +41,7 @@
 
 ---
 
-* Pretty literally* **magie**
+* Pretty literally* **magic(k)**
 
 ![inline](https://media.giphy.com/media/3o84U6421OOWegpQhq/giphy.gif)
 
@@ -49,7 +49,7 @@
 
 ---
 
-# WebAssmebly is a compilation target
+# WebAssmebly is a **compilation target**
 
 * You write code in other languages and compile them into WebAssembly
 * Rust, C/C++, Go, C#; these are just a few of the languages with WebAssembly as a compile target
@@ -72,7 +72,7 @@
 
 ---
 
-# THIS IS *THE NEXT AJAX* FOR THE BROWSER
+# THIS IS **A NEW ERA FOR THE WEB**
 
 ---
 
@@ -82,7 +82,7 @@
 
 # No but seriously
 
-Ajax lent a huge credibility to browser applications, and WebAssembly is an evolution of that.
+WebAssembly is comprable to bringing the power of the JVM **into the browser**, creating an **evolution of the web as we know it**.
 
 ![inline](https://media.giphy.com/media/A9rtrLGbNZjgc/giphy.gif)
 
@@ -108,7 +108,7 @@ Ajax lent a huge credibility to browser applications, and WebAssembly is an evol
 
 ---
 
-## Why does this matter?
+# Why does this matter?
 
 * Augmenting JS at its not-so-strong points
 * Not rewriting entire codebases to use them on the web
@@ -116,15 +116,15 @@ Ajax lent a huge credibility to browser applications, and WebAssembly is an evol
 
 ---
 
-## Augmenting JS at its not-so-strong points
+# Augmenting JS at its not-so-strong points
 
-`0.1 + 0.2 === 0.3 //false`
+Who wants to write a banking app in JS?
 
-If you're running *anything that relies on mathematical numerical accuracy* that meant, until now, another AJAX call to have another language do alllllllll the math. *With WebAssembly*, we can do this in the browser, with, say, Rust.
+If you're running *anything that relies on mathematical numerical accuracy or speed* that meant, until now, another AJAX call to have another language do alllllllll the math. *With WebAssembly*, we can do this in the browser, with, say, Rust.
 
 ---
 
-## Other JS not-so-strong points
+# Other JS not-so-strong points
 
 * Type coercion side-effects: `"" == 0 //true`
 * API Overloads:
@@ -234,7 +234,7 @@ typeof [] === "array"; //false
 
 ![inline](./img/qr.png)
 
-(I'll show this again later and it's at our booth)
+(I'll show this again later)
 
 ---
 
@@ -258,9 +258,3 @@ typeof [] === "array"; //false
 
 * kas@cloudflare.com
 * @nodebotanist
-* Search meetup.com for 'Serverless' for a meetup on Tues here in Singapore where you can learn to write a worker
-
-
-
-
-
