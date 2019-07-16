@@ -12,10 +12,8 @@
 
 ---
 
-## CatParent
-
-![left](./img/ace.jpg)
-![right](./img/Arya.jpg)
+![left original](./img/ace.jpg)
+![right original](./img/Arya.jpg)
 
 ---
 
@@ -220,7 +218,7 @@ typeof [] === "array"; //false
 ---
 
 > "Everyone wants to [deprecate] node-gyp and WebAssembly would allow us to do this"
--- Laurie Voss, this morning
+-- Laurie Voss, a few weeks ago
 
 ---
 
